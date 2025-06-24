@@ -1,0 +1,37 @@
+# Node modules (React)
+client/node_modules/
+client/package-lock.json
+
+# Build files
+client/build/
+
+# Tailwind cache
+client/.tailwind
+
+# Django stuff
+**/__pycache__
+server/__pycache__/
+server/db.sqlite3
+server/*.pyc
+server/*.pyo
+server/*.pyd
+server/.Python
+server/*.log
+
+# Environment
+server/.env
+
+# Python virtual environments
+server/env
+venv/
+.env/
+*.env
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
