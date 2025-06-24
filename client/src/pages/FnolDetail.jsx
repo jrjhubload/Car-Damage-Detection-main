@@ -18,10 +18,11 @@ const FnolDetail = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 px-6 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">#FNOL{fnolData.fnolId} Details</h1>
-       {/* Left Section - Text Details */}
+    <div className="pt-24 pb-20 max-w-7xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6 text-gray-800 ">#FNOL{fnolData.fnolId} Details</h1>
+       
       <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
         <div className="flex flex-col space-y-4">
           <div className="flex items-center">
             <label className="w-32 text-gray-700 font-medium">Sr.No:</label>
@@ -36,7 +37,7 @@ const FnolDetail = () => {
             <label className="w-32 text-gray-700 font-medium pt-3">FNOL:</label> 
             <textarea
                 className="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                rows="4"
+                rows="7"
                 defaultValue={fnolData.fnolDetails}
               ></textarea>
           </div>
