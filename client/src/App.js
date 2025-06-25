@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FnolDetail from './pages/FnolDetail'; 
+import FnolUpload from './pages/FnolUpload';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -41,6 +42,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/fnol/:fnolId" element={<PrivateRoute><FnolDetail /></PrivateRoute>} />
+          <Route path="/fnol-upload" element={<PrivateRoute><FnolUpload /></PrivateRoute>} />
           <Route path="/logout" element={<LogoutHandler />} />
         </Routes>
       </LayoutWrapper>
